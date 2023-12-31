@@ -12,7 +12,7 @@
 \setboolean{finalcompile}{false}
 
 % show DFG template version the current LaTeX template is based on in the header. Will be deactivated when 'finalcompile' is set 'true'
-\ifthenelse{\boolean{finalcompile}}{}{\ihead*{DFG 54.01 - 09/22}}
+\ifthenelse{\boolean{finalcompile}}{}{\ihead*{DFG 53.01 - 09/22}}
 
 % all config is done in Header.tex
 \input{Header.tex}
@@ -22,8 +22,8 @@
 %%%%  TITELSEITE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\applicants}{Dr.\ Martin H\"olzer, Robert Koch Institute, Berlin}
-\newcommand{\project}{Project title}
+\newcommand{\applicants}{Dr.\ Martin H\"olzer, Robert Koch Institute, Berlin [Name, Vorname, Ort aller Antragstellenden]}
+\newcommand{\project}{[Titel des Projekts]}
 
 % declare bibliography categories
 
@@ -65,8 +65,8 @@
 \todo{Kapitel 1--3, insgesamt maximal 17 Seiten}
 {\raggedright{} \normalsize \bfseries 
 	Beschreibung des Vorhabens - Projektanträge \par
-	\applicants{[Name, Vorname, Ort aller Antragstellenden]} \par
-	\project{[Titel des Projekts]} \par
+	\applicants{} \par
+	\project{} \par
 	\rule{\textwidth}{0.5pt} \par
 	%Project Description
 }
@@ -81,7 +81,7 @@
 % For renewal proposals, please report on your previous work. This report
 % should also be understandable without referring to additional literature.
 
-This is a dummy citation~\cite{Hoelzer:17}. Yeah. And another one~\cite{Gerst:18}. Wuhuh. In an older version of the template, these citations~\cite{Hoelzer:16, Desiro:18} were not shown in the ``\ref{sec:bib}~Bibliography'' section, because they are already listed as \verb=\addtocategory{reviewed}{Hoelzer:16}= and\verb=\addtocategory{nonreviewed}{Desiro:18}= in the praeambl and therefore shown in subsubsections \emph{Articles published by outlets with scientific quality \dots} and \emph{Other publications, both peer-reviewed and non-peer-reviewed}. However, these subsubsections are deprecated since v54.01 of the DFG template! And therefore, all the four citations above will simply show up in ``\ref{sec:bib}~Project- and subject-related list of publications'' now.
+This is a dummy citation~\cite{Hoelzer:17}. Yeah. And another one~\cite{Gerst:18}. Wuhuh. In an older version of the template, these citations~\cite{Hoelzer:16, Desiro:18} were not shown in the ``\ref{sec:bib}~Bibliography'' section, because they are already listed as \verb=\addtocategory{reviewed}{Hoelzer:16}= and\verb=\addtocategory{nonreviewed}{Desiro:18}= in the praeambl and therefore shown in subsubsections \emph{Articles published by outlets with scientific quality \dots} and \emph{Other publications, both peer-reviewed and non-peer-reviewed}. However, these subsubsections are deprecated since v53.01 of the DFG template! And therefore, all the four citations above will simply show up in ``\ref{sec:bib}~Project- and subject-related list of publications'' now.
 
 \lipsum[1]
 
@@ -232,8 +232,8 @@ accessible for future use.
 darauf bezogenem traditionellem Wissen) aus dem Ausland}
 \todo[inline]{Text}
 
-\subsubsection{Erläuterungen zu möglichen sicherheitsrelevanten Aspekten („Dual-Use 
-Research of Concern``, Außenwirtschaftsrecht)}
+\subsubsection{Erläuterungen zu möglichen sicherheitsrelevanten Aspekten ("Dual-Use 
+Research of Concern", Außenwirtschaftsrecht)}
 \todo[inline]{Text}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

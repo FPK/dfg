@@ -12,7 +12,7 @@
 \setboolean{finalcompile}{false}
 
 % show DFG template version the current LaTeX template is based on in the header. Will be deactivated when 'finalcompile' is set 'true'
-\ifthenelse{\boolean{finalcompile}}{}{\ihead*{DFG 54.01 - 09/22}}
+\ifthenelse{\boolean{finalcompile}}{}{\ihead*{DFG 53.01 - 09/22}}
 
 % all config is done in Header.tex
 \input{Header.tex}
@@ -22,8 +22,8 @@
 %%%%  TITLE PAGE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\applicants}{Dr.\ Martin H\"olzer, Robert Koch Institute, Berlin}
-\newcommand{\project}{Project title}
+\newcommand{\applicants}{Dr.\ Martin H\"olzer, Robert Koch Institute, Berlin [First name  last name, city of all applicants]}
+\newcommand{\project}{[Project title]}
 
 % declare bibliography categories
 
@@ -81,7 +81,7 @@
 % For renewal proposals, please report on your previous work. This report
 % should also be understandable without referring to additional literature.
 
-This is a dummy citation~\cite{Hoelzer:17}. Yeah. And another one~\cite{Gerst:18}. Wuhuh. In an older version of the template, these citations~\cite{Hoelzer:16, Desiro:18} were not shown in the "\ref{sec:bib}~Bibliography" section, because they are already listed as \verb=\addtocategory{reviewed}{Hoelzer:16}= and\verb=\addtocategory{nonreviewed}{Desiro:18}= in the praeambl and therefore shown in subsubsections \emph{Articles published by outlets with scientific quality \dots} and \emph{Other publications, both peer-reviewed and non-peer-reviewed}. However, these subsubsections are deprecated since v54.01 of the DFG template! And therefore, all the four citations above will simply show up in "\ref{sec:bib}~Project- and subject-related list of publications" now.
+This is a dummy citation~\cite{Hoelzer:17}. Yeah. And another one~\cite{Gerst:18}. Wuhuh. In an older version of the template, these citations~\cite{Hoelzer:16, Desiro:18} were not shown in the "\ref{sec:bib}~Bibliography" section, because they are already listed as \verb=\addtocategory{reviewed}{Hoelzer:16}= and\verb=\addtocategory{nonreviewed}{Desiro:18}= in the praeambl and therefore shown in subsubsections \emph{Articles published by outlets with scientific quality \dots} and \emph{Other publications, both peer-reviewed and non-peer-reviewed}. However, these subsubsections are deprecated since v53.01 of the DFG template! And therefore, all the four citations above will simply show up in "\ref{sec:bib}~Project- and subject-related list of publications" now.
 
 \lipsum[1]
 
@@ -119,10 +119,11 @@ This is a dummy citation~\cite{Hoelzer:17}. Yeah. And another one~\cite{Gerst:18
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%  OBJECTIVES AND WP %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Objectives and work programme}
+\section{Objectives and work program}
 
 \subsection{Anticipated total duration of the project}
-Financial support is requested for \todo[inline]{three years}.
+Financial support is requested for \todo[inline]{three years.}
+
 \subsection{Objectives}
 \let\oldpara=\theparagraph
 \addtocounter{secnumdepth}{1}
@@ -130,7 +131,7 @@ Financial support is requested for \todo[inline]{three years}.
 
 \paragraph{\textnormal{Goal one is ...}}
 
-\subsection{Work programme including proposed research methods}
+\subsection{Work program including proposed research methods}
 %For each applicant
 \todo[inline]{ca.\ 6-8 pages; ca. 4-8 WPs}
 
@@ -149,13 +150,13 @@ afterskip=2.5ex plus 0.2ex minus 0.2ex]{subparagraph}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \hrulefill
-\paragraph{First Workpackage.}
+\paragraph{First work package.}
 \label{wp:1}
 
 \input{wp/wp1.tex}
 
 \hrulefill
-\paragraph{Second Workpackage.}
+\paragraph{Second work package.}
 \label{wp:2}
 
 \input{wp/wp2.tex}
@@ -238,7 +239,7 @@ H\"olzer, Martin -- postdoctoral researcher, \todo[inline]{additional informatio
 
 \subsection{First-time proposal data}
 %only if applicable: Last name, first name of first-time applicant
-H\"olzer, Martin.
+\todo[inline]{H\"olzer, Martin.}
 
 \subsection{Composition of the project group}
 %List only those individuals who will work on the project but will not be paid
@@ -275,7 +276,8 @@ None.
 \subsection{Scientific equipment}
 %List larger instruments that will be available to you for the project. These may include large computer facilities if computing capacity will be needed.
 \todo[inline]{Text}
-As something can be seen in \cref{fig:some_nice_graph} \todo[inline]{the figure has to be made}.
+As something can be seen in \cref{fig:some_nice_graph}.
+
 \begin{figure}
 \centering
 \missingfigure{schematics of a souvereign-class warp-reactor}
