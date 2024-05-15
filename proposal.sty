@@ -72,6 +72,27 @@
 {\endlist}
 {\item}
 
+% necessary changes to make the selected references bold 
+\AtEveryBibitem{%
+  \ifcategory{important}%
+    {\hypersetup{urlcolor=impentry}\bfseries\color{impentry}}%
+    {}%
+  }
+\AtEveryCitekey{%
+  \ifcategory{important}%
+    {\hypersetup{citecolor=impentry}\bfseries\color{impentry}}%
+    {}%
+  }
+
+% To also colorize the labels in the bibliography:
+  \AtBeginBibliography{%
+  \DeclareFieldFormat{labelnumberwidth}{%
+  \ifcategory{important}%
+    {\bfseries\color{impentry}\mkbibbrackets{#1}}%
+    {\mkbibbrackets{#1}}%
+  }}
+
+
 %% von Hurenkindern und Schusterjungen
 \clubpenalty = 10000
 \widowpenalty = 10000 \displaywidowpenalty = 10000
